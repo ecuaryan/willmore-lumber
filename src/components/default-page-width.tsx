@@ -9,7 +9,7 @@ export default function DefaultPageWidth({
     <main>
       <Box
         sx={{
-          width: "80%",
+          width: { xs: "90%", md: "80%" },
           margin: "50px auto 50px auto",
         }}
       >
