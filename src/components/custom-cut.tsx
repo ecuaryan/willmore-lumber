@@ -18,7 +18,7 @@ export default function CustomCut() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Precision-Cut Lumber for Every Project
+          Custom-Cut Lumber for Every Project
         </Typography>
         <Typography variant="body2" color="text.secondary">
           We custom-cut lumber to perfectly match your specifications.

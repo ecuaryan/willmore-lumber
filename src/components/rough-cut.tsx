@@ -26,7 +26,7 @@ export default function RoughCut() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Link href="/products">
+        <Link href="/rough-cut-lumber">
           <Button size="small">Learn More</Button>
         </Link>
       </CardActions>

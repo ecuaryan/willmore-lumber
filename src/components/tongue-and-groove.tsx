@@ -26,7 +26,7 @@ export default function TongueAndGroove() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Link href="/products">
+        <Link href="/tongue-and-groove">
           <Button size="small">Learn More</Button>
         </Link>
       </CardActions>
