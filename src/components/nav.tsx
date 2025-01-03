@@ -1,17 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import { ReactNode } from "react";
 
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import ForestIcon from "@mui/icons-material/Forest";
+import HomeIcon from "@mui/icons-material/Home";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import MenuIcon from "@mui/icons-material/Menu";
+import PhoneIcon from "@mui/icons-material/Phone";
 import {
   Box,
+  Button,
+  Collapse,
+  Divider,
   Drawer,
   IconButton,
   List,
   ListItem,
   ListItemButton,
+  ListItemIcon,
+  ListItemText,
   Stack,
+  styled,
   useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -21,37 +36,86 @@ import { usePathname } from "next/navigation";
 
 import NavLink from "./nav-link";
 
+const DrawerHeader = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  padding: theme.spacing(0, 1),
+  // necessary for content to be below app bar
+  ...theme.mixins.toolbar,
+  justifyContent: "flex-end",
+}));
+
 const navLinks = [
-  { href: "/", text: "Home" },
-  { href: "/products", text: "Products" },
-  { href: "/custom-cut-lumber", text: "Custom-Cut Lumber" },
-  { href: "/firewood", text: "Firewood" },
-  { href: "/contact-us", text: "Contact Us" },
+  { href: "/", text: "Home", icon: <HomeIcon /> },
+  {
+    text: "Products",
+    icon: <ForestIcon />,
+    subNavLinks: [
+      { href: "/rough-cut-lumber", text: "Rough-Cut Lumber" },
+      { href: "/beams", text: "Beams" },
+      { href: "/tongue-and-groove", text: "Tongue and Groove" },
+      { href: "/flooring", text: "Flooring" },
+      { href: "/decking", text: "Decking" },
+      { href: "/siding", text: "Siding" },
+      { href: "/baled-shavings", text: "Baled Shavings" },
+      { href: "/firewood", text: "Firewood" },
+      { href: "/fasteners", text: "Fasteners" },
+      { href: "/wood-stain", text: "Wood Stain" },
+    ],
+  },
+  {
+    text: "Services",
+    icon: <LocalShippingIcon />,
+    subNavLinks: [
+      { href: "/custom-cut-lumber", text: "Custom-Cut Lumber" },
+      { href: "/delivery", text: "Delivery" },
+    ],
+  },
+  { href: "/contact-us", text: "Contact Us", icon: <PhoneIcon /> },
 ];
 
 export default function Nav() {
   const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
-  const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const theme = useTheme();
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [drawerOpener, setDrawerOpener] = useState("");
+
+  const handleDrawerClose = () => {
+    setDrawerOpen(false);
+  };
 
   return (
     <AppBar
       position="sticky"
       sx={{
         flexDirection: "row",
-        padding: "5px",
         justifyContent: isLargeScreen ? "center" : undefined,
       }}
     >
       <Toolbar sx={{ width: "100%" }}>
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          onClick={() => {
+            setDrawerOpen(true);
+            setDrawerOpener("menu icon");
+          }}
+        >
+          <MenuIcon fontSize="large" />
+        </IconButton>
         <Box width="100%" sx={{ display: { xs: "none", md: "flex" } }}>
           <Link href="/" style={{ display: "flex" }}>
             <Image
               src="/logo-trimmed.png"
-              width={150}
-              height={124.22}
+              width={139.28}
+              height={114}
               alt="Willmore Lumber logo"
               unoptimized
+              style={{ margin: "5px" }}
             />
           </Link>
           <Stack
@@ -63,9 +127,26 @@ export default function Nav() {
               alignItems: "center",
             }}
           >
-            {navLinks.map((link) => (
-              <NavLink key={link.text} href={link.href} text={link.text} />
-            ))}
+            {navLinks.map((link) => {
+              if (link.href) {
+                return (
+                  <NavLink key={link.text} href={link.href} text={link.text} />
+                );
+              } else {
+                return (
+                  <Button
+                    key={link.text}
+                    color="inherit"
+                    onClick={() => {
+                      setDrawerOpen(true);
+                      setDrawerOpener(link.text);
+                    }}
+                  >
+                    {link.text}
+                  </Button>
+                );
+              }
+            })}
           </Stack>
         </Box>
         <Box
@@ -74,15 +155,6 @@ export default function Nav() {
             display: { xs: "flex", md: "none" },
           }}
         >
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={() => setOpen(true)}
-          >
-            <MenuIcon />
-          </IconButton>
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
             <Link href="/" style={{ display: "flex" }}>
               <Image
@@ -95,34 +167,123 @@ export default function Nav() {
             </Link>
           </Box>
         </Box>
-        <Drawer open={open} onClose={() => setOpen(false)}>
-          <Box
-            width={"250px"}
-            role="presentation"
-            onClick={() => setOpen(false)}
-          >
+        <Drawer open={drawerOpen} onClose={handleDrawerClose}>
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === "ltr" ? (
+                <ChevronLeftIcon />
+              ) : (
+                <ChevronRightIcon />
+              )}
+            </IconButton>
+          </DrawerHeader>
+          <Divider />
+          <Box width={"275px"} role="presentation">
             <List>
-              {navLinks.map((link) => (
-                <ListItem
-                  key={link.text}
-                  disablePadding
-                  sx={
-                    pathname === link.href
-                      ? {
-                          backgroundColor: "rgba(255, 255, 255, .2)",
-                        }
-                      : {}
-                  }
-                >
-                  <ListItemButton>
-                    <Link href={link.href}>{link.text}</Link>
-                  </ListItemButton>
-                </ListItem>
-              ))}
+              {navLinks.map((navLink) => {
+                return !navLink.subNavLinks ? (
+                  <NavListItem
+                    key={navLink.text}
+                    href={navLink.href}
+                    text={navLink.text}
+                    icon={navLink.icon}
+                    onNavigate={handleDrawerClose}
+                  />
+                ) : (
+                  <NavTree
+                    key={navLink.text}
+                    text={navLink.text}
+                    icon={navLink.icon}
+                    onNavigate={handleDrawerClose}
+                    navListItems={navLink.subNavLinks}
+                    expandedTree={
+                      drawerOpener === navLink.text ||
+                      navLink.subNavLinks.filter((s) => s.href === pathname)
+                        .length > 0
+                    }
+                  />
+                );
+              })}
             </List>
           </Box>
         </Drawer>
       </Toolbar>
     </AppBar>
+  );
+}
+
+type NavListItemType = {
+  href: string;
+  text: string;
+  icon?: ReactNode;
+  indent?: boolean;
+};
+
+function NavTree({
+  text,
+  navListItems,
+  onNavigate,
+  icon,
+  expandedTree = false,
+}: {
+  text: string;
+  navListItems: NavListItemType[];
+  onNavigate: () => void;
+  icon: ReactNode;
+  expandedTree: boolean;
+}) {
+  const [expanded, setExpanded] = useState(expandedTree);
+
+  return (
+    <>
+      <ListItemButton onClick={() => setExpanded(!expanded)}>
+        {icon && <ListItemIcon>{icon}</ListItemIcon>}
+        <ListItemText primary={text} />
+        {expanded ? <ExpandMore /> : <ExpandLess />}
+      </ListItemButton>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {navListItems.map((navLink) => (
+            <NavListItem
+              key={navLink.text}
+              href={navLink.href}
+              text={navLink.text}
+              onNavigate={onNavigate}
+              indent={true}
+            />
+          ))}
+        </List>
+      </Collapse>
+    </>
+  );
+}
+
+function NavListItem({
+  href,
+  text,
+  onNavigate,
+  icon,
+  indent,
+}: NavListItemType & { onNavigate: () => void }) {
+  const pathname = usePathname();
+
+  return (
+    <ListItem
+      disablePadding
+      sx={
+        pathname === href
+          ? {
+              backgroundColor: "rgba(255, 255, 255, .2)",
+            }
+          : {}
+      }
+    >
+      <Link href={href} style={{ width: "100%" }}>
+        <ListItemButton sx={indent ? { pl: 4 } : {}} onClick={onNavigate}>
+          {icon && <ListItemIcon>{icon}</ListItemIcon>}
+          <ListItemText primary={text} />
+        </ListItemButton>
+      </Link>
+    </ListItem>
   );
 }
