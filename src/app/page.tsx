@@ -20,7 +20,13 @@ export default function Home() {
           width: "100%",
         }}
       >
-        <Image src="/logs.webp" alt="logs" fill objectFit="cover" unoptimized />
+        <Image
+          src="/logs.webp"
+          alt="logs"
+          fill
+          style={{ objectFit: "cover" }}
+          unoptimized
+        />
         <Box
           position="absolute"
           width="inherit"
