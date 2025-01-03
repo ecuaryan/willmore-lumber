@@ -7,7 +7,7 @@ import { Stack } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,11 +21,15 @@ export default function Home() {
         }}
       >
         <Image
+          priority
           src="/logs.webp"
           alt="logs"
           fill
-          style={{ objectFit: "cover" }}
           unoptimized
+          style={{
+            objectFit: "cover",
+            maxWidth: "100%",
+          }}
         />
         <Box
           position="absolute"

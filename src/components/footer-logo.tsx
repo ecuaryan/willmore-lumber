@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function FooterLogo() {
   return (
@@ -7,10 +7,14 @@ export default function FooterLogo() {
       <Image
         src="/logo.webp"
         alt="Willmore Lumber logo"
-        layout="responsive"
         width={349.98}
         height={286.45}
         unoptimized
+        sizes="100vw"
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
       />
       <Box textAlign={"center"}>
         © 2024 - Willmore Lumber Co. All rights reserved.
