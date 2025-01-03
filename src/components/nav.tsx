@@ -59,6 +59,7 @@ const navLinks = [
       { href: "/siding", text: "Siding" },
       { href: "/baled-shavings", text: "Baled Shavings" },
       { href: "/firewood", text: "Firewood" },
+      { href: "/railroad-ties", text: "Railroad Ties" },
       { href: "/fasteners", text: "Fasteners" },
       { href: "/wood-stain", text: "Wood Stain" },
     ],
@@ -159,10 +160,15 @@ export default function Nav() {
             <Link href="/" style={{ display: "flex" }}>
               <Image
                 src="/logo.webp"
-                width={68.42}
-                height={56}
                 alt="Willmore Lumber logo"
+                width={68.42} // or your image's natural width
+                height={56}
+                // layout="intrinsic"
                 unoptimized
+                style={{
+                  height: "56px", // Set desired height if necessary
+                  width: "auto", // Width will scale automatically
+                }}
               />
             </Link>
           </Box>
