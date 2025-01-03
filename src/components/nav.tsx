@@ -287,3 +287,5 @@ function NavListItem({
     </ListItem>
   );
 }
+
+// TODO: Ask dad about "logging" and "careers"

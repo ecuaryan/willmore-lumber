@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 
-export default function CustomCutLumber() {
+export default function RoughCutLumber() {
   return (
     <>
       <Typography variant="h5">
-        Custom-Cut Lumber - This page is coming soon.
+        Rough-Cut Lumber - This page is coming soon.
       </Typography>
     </>
   );
