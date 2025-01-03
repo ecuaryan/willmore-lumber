@@ -110,7 +110,7 @@ export default function Nav() {
         <Box width="100%" sx={{ display: { xs: "none", md: "flex" } }}>
           <Link href="/" style={{ display: "flex" }}>
             <Image
-              src="/logo-trimmed.png"
+              src="/logo.webp"
               width={139.28}
               height={114}
               alt="Willmore Lumber logo"
@@ -158,7 +158,7 @@ export default function Nav() {
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
             <Link href="/" style={{ display: "flex" }}>
               <Image
-                src="/logo-trimmed.png"
+                src="/logo.webp"
                 width={68.42}
                 height={56}
                 alt="Willmore Lumber logo"

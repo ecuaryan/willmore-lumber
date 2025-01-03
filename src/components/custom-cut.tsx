@@ -13,7 +13,7 @@ export default function CustomCut() {
     <Card>
       <CardMedia
         sx={{ height: 250 }}
-        image="/custom-beams.jpg"
+        image="/custom-beams.webp"
         title="custom beams"
       />
       <CardContent>

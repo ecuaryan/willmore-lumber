@@ -13,7 +13,7 @@ export default function TongueAndGroove() {
     <Card>
       <CardMedia
         sx={{ height: 250 }}
-        image="/tongue-and-groove.jpg"
+        image="/tongue-and-groove.webp"
         title="tongue and groove"
       />
       <CardContent>

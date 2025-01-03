@@ -13,7 +13,7 @@ export default function RoughCut() {
     <Card>
       <CardMedia
         sx={{ height: 250 }}
-        image="/rough-cut-lumber.jpg"
+        image="/rough-cut-lumber.webp"
         title="rough cut lumber"
       />
       <CardContent>

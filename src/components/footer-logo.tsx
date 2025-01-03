@@ -5,7 +5,7 @@ export default function FooterLogo() {
   return (
     <>
       <Image
-        src="/logo-trimmed.png"
+        src="/logo.webp"
         alt="Willmore Lumber logo"
         layout="responsive"
         width={349.98}
