@@ -289,3 +289,4 @@ function NavListItem({
 }
 
 // TODO: Ask dad about "logging" and "careers"
+// TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
