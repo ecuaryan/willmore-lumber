@@ -30,7 +30,7 @@ import {
 } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
