@@ -51,6 +51,5 @@ export default function RootLayout({
 }
 
 // TODO: optimize the images manually?
-// TODO: remove logo.png (keep the trimmed one)
 
 // TODO: setup deployment pipeline for github pages?
