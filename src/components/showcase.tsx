@@ -26,9 +26,9 @@ const showcaseItems = [
   },
   {
     imagePath: "/tongue-and-groove.webp",
-    imageDescription: "Tongue and Groove Panels",
+    imageDescription: "Tongue and Groove Boards",
     heading: "Versatile Tongue and Groove Solutions",
-    text: "Discover the natural beauty of knotty pine and Douglas fir tongue-and-groove panels, perfect for a wide range of applications.",
+    text: "Discover the natural beauty of knotty pine and Douglas fir tongue-and-groove boards, perfect for a wide range of applications.",
     learnMorePath: "/tongue-and-groove",
   },
   {

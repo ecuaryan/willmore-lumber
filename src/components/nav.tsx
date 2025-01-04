@@ -291,5 +291,6 @@ function NavListItem({
 
 // TODO: custom planing - talk about this on the Custom-Cut Lumber page --> planing, rough, even can make the reverse engineered knives to match an old style
 // Call or email for pricing --> where to put this?
+// Add testimonials to the site
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
