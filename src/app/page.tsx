@@ -1,12 +1,7 @@
-import CustomCut from "@/components/custom-cut";
 import DefaultPageWidth from "@/components/default-page-width";
-import RoughCut from "@/components/rough-cut";
-import TongueAndGroove from "@/components/tongue-and-groove";
+import Showcase from "@/components/showcase";
 
-import { Stack } from "@mui/material";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid2";
-import Typography from "@mui/material/Typography";
+import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 
 export default function Home() {
@@ -63,20 +58,7 @@ export default function Home() {
         </Box>
       </Box>
       <DefaultPageWidth>
-        <Grid container spacing={4}>
-          <Grid size={12}>
-            <Typography variant="h4">The Goods From The Woods</Typography>
-          </Grid>
-          <Grid size={{ xs: 12, md: 4 }}>
-            <RoughCut />
-          </Grid>
-          <Grid size={{ xs: 12, md: 4 }}>
-            <TongueAndGroove />
-          </Grid>
-          <Grid size={{ xs: 12, md: 4 }}>
-            <CustomCut />
-          </Grid>
-        </Grid>
+        <Showcase />
       </DefaultPageWidth>
     </>
   );

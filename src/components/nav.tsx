@@ -53,7 +53,7 @@ const navLinks = [
     icon: <ForestIcon />,
     subNavLinks: [
       { href: "/rough-cut-lumber", text: "Rough-Cut Lumber" },
-      { href: "/beams", text: "Beams" },
+      { href: "/posts-and-beams", text: "Posts and Beams" },
       { href: "/tongue-and-groove", text: "Tongue and Groove" },
       { href: "/flooring", text: "Flooring" },
       { href: "/decking", text: "Decking" },
@@ -293,5 +293,3 @@ function NavListItem({
 // Call or email for pricing --> where to put this?
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
-
-// TODO: work on the carousel

@@ -8,24 +8,38 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 
-export default function CustomCut() {
+export default function ShowcaseItem({
+  imagePath,
+  imageDescription,
+  heading,
+  text,
+  learnMorePath,
+}: {
+  imagePath: string;
+  imageDescription: string;
+  heading: string;
+  text: string;
+  learnMorePath: string;
+}) {
   return (
     <Card>
       <CardMedia
-        sx={{ height: 250 }}
-        image="/custom-beams.webp"
-        title="custom beams"
+        component="img"
+        height="300"
+        image={imagePath}
+        alt={imageDescription}
+        title={imageDescription}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Custom-Cut Lumber for Every Project
+          {heading}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          We custom-cut lumber to perfectly match your specifications.
+          {text}
         </Typography>
       </CardContent>
       <CardActions>
-        <Link href="/custom-cut-lumber">
+        <Link href={learnMorePath}>
           <Button size="small">Learn More</Button>
         </Link>
       </CardActions>
