@@ -112,10 +112,9 @@ export default function Nav() {
           <Link href="/" style={{ display: "flex" }}>
             <Image
               src="/logo.webp"
-              width={139.28}
+              width={139}
               height={114}
               alt="Willmore Lumber logo"
-              unoptimized
               style={{ margin: "5px" }}
             />
           </Link>
@@ -161,14 +160,8 @@ export default function Nav() {
               <Image
                 src="/logo.webp"
                 alt="Willmore Lumber logo"
-                width={68.42} // or your image's natural width
+                width={68}
                 height={56}
-                // layout="intrinsic"
-                unoptimized
-                style={{
-                  height: "56px", // Set desired height if necessary
-                  width: "auto", // Width will scale automatically
-                }}
               />
             </Link>
           </Box>
@@ -294,5 +287,10 @@ function NavListItem({
   );
 }
 
-// TODO: Ask dad about "logging" and "careers"
+// TODO: custom planing - talk about this on the Custom-Cut Lumber page --> planing, rough, even can make the reverse engineered knives to match an old style
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
+// TODO: put the goods from the woods in the metadata somehow
+
+// Call or email for pricing --> where to put this?
+
+// TODO: add an About Us page

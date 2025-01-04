@@ -25,7 +25,6 @@ export default function Home() {
           src="/logs.webp"
           alt="logs"
           fill
-          unoptimized
           style={{
             objectFit: "cover",
             maxWidth: "100%",
