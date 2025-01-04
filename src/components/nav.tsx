@@ -7,6 +7,7 @@ import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ForestIcon from "@mui/icons-material/Forest";
+import GroupsIcon from "@mui/icons-material/Groups";
 import HomeIcon from "@mui/icons-material/Home";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -72,6 +73,7 @@ const navLinks = [
       { href: "/delivery", text: "Delivery" },
     ],
   },
+  { href: "/about-us", text: "About Us", icon: <GroupsIcon /> },
   { href: "/contact-us", text: "Contact Us", icon: <PhoneIcon /> },
 ];
 
@@ -288,9 +290,8 @@ function NavListItem({
 }
 
 // TODO: custom planing - talk about this on the Custom-Cut Lumber page --> planing, rough, even can make the reverse engineered knives to match an old style
-// TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
-// TODO: put the goods from the woods in the metadata somehow
-
 // Call or email for pricing --> where to put this?
 
-// TODO: add an About Us page
+// TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
+
+// TODO: work on the carousel

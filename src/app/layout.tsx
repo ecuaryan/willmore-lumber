@@ -51,7 +51,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// TODO: optimize the images manually?
-
-// TODO: setup deployment pipeline for github pages?
