@@ -50,7 +50,7 @@ export default function Reviews() {
     <Box mt={"50px"}>
       <Typography variant="h4">What Our Customers Say</Typography>
       <Typography variant="subtitle1">
-        See why our customers choose us for their wood product needs.
+        See why our customers choose us for their wood product needs
       </Typography>
       <Swiper
         cssMode={true}
