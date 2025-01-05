@@ -10,7 +10,7 @@ import FooterLogo from "./footer-logo";
 export default function Footer() {
   return (
     <DefaultPageWidth>
-      <footer>
+      <footer style={{ marginTop: 50, marginBottom: 300 }}>
         <Box color={"text.secondary"}>
           <Divider />
           <Grid container spacing={10} paddingTop={"50px"}>

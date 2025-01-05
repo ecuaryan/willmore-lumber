@@ -1,4 +1,5 @@
 import DefaultPageWidth from "@/components/default-page-width";
+import Reviews from "@/components/reviews";
 import Showcase from "@/components/showcase";
 
 import { Box, Stack, Typography } from "@mui/material";
@@ -59,6 +60,7 @@ export default function Home() {
       </Box>
       <DefaultPageWidth>
         <Showcase />
+        <Reviews />
       </DefaultPageWidth>
     </>
   );

@@ -6,15 +6,13 @@ export default function DefaultPageWidth({
   children: React.ReactNode;
 }>) {
   return (
-    <main>
-      <Box
-        sx={{
-          width: { xs: "90%", md: "80%" },
-          margin: "50px auto 50px auto",
-        }}
-      >
-        {children}
-      </Box>
-    </main>
+    <Box
+      sx={{
+        width: { xs: "90%", md: "80%" },
+        margin: "0px auto",
+      }}
+    >
+      {children}
+    </Box>
   );
 }

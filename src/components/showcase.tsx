@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -51,7 +51,7 @@ export default function ProductShowcase() {
   const theme = useTheme();
 
   return (
-    <>
+    <Box mt={"50px"}>
       <Typography variant="h4">The Goods From The Woods</Typography>
       <Typography variant="subtitle1">
         Browse our wide selection of high-quality wood products and services
@@ -90,6 +90,6 @@ export default function ProductShowcase() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </Box>
   );
 }

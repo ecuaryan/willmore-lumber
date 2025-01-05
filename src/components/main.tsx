@@ -1,5 +1,6 @@
 "use client";
 
+import { Box } from "@mui/material";
 import { usePathname } from "next/navigation";
 
 import DefaultPageWidth from "./default-page-width";
@@ -12,12 +13,14 @@ export default function Main({
   const pathname = usePathname();
 
   return (
-    <>
+    <main>
       {pathname === "/" ? (
-        <main>{children}</main>
+        <>{children}</>
       ) : (
-        <DefaultPageWidth>{children}</DefaultPageWidth>
+        <DefaultPageWidth>
+          <Box mt={"50px"}>{children}</Box>
+        </DefaultPageWidth>
       )}
-    </>
+    </main>
   );
 }
