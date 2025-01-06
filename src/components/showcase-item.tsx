@@ -25,7 +25,7 @@ export default function ShowcaseItem({
     <Card>
       <CardMedia
         component="img"
-        height="300"
+        height="350"
         image={imagePath}
         alt={imageDescription}
         title={imageDescription}
