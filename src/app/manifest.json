@@ -2,6 +2,7 @@
   "name": "Willmore Lumber",
   "short_name": "Willmore Lumber",
   "start_url": "/",
+  "description": "Willmore Lumber is a family-owned business offering high-quality wood products, including rough-cut lumber, tongue and groove boards, flooring, siding, custom-cut lumber, posts, and beams.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
