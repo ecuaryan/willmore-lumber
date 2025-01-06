@@ -38,6 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="apple-mobile-web-app-title" content="Willmore Lumber" />
       <body className={roboto.variable}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
