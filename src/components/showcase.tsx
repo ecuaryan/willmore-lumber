@@ -40,11 +40,15 @@ const showcaseItems = [
   },
 ];
 
+// TODO: need to move these out of here so they apply site wide probably
+// TODO: potentially move out the props too
 const swiperCustomStyles = {
-  "--swiper-navigation-color": "white",
-  "--swiper-pagination-color": "white",
+  padding: 30,
+  "--swiper-navigation-color": "#FFF",
+  "--swiper-pagination-color": "#FFF",
   "--swiper-pagination-bullet-inactive-color": "#FFF",
   "--swiper-pagination-bullet-inactive-opacity": "0.2",
+  "--swiper-navigation-sides-offset": "0px",
 };
 
 export default function ProductShowcase() {
@@ -59,7 +63,6 @@ export default function ProductShowcase() {
       <Swiper
         cssMode={true}
         style={{
-          padding: 50,
           ...swiperCustomStyles,
         }}
         slidesPerView={1}
@@ -82,7 +85,6 @@ export default function ProductShowcase() {
         }}
         freeMode={true}
         modules={[Keyboard, Pagination, Navigation, FreeMode]}
-        className="mySwiper"
       >
         {showcaseItems.map((s) => (
           <SwiperSlide key={s.heading}>

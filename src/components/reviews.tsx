@@ -55,10 +55,12 @@ const reviewItems = [
 ];
 
 const swiperCustomStyles = {
-  "--swiper-navigation-color": "white",
-  "--swiper-pagination-color": "white",
+  padding: 30,
+  "--swiper-navigation-color": "#FFF",
+  "--swiper-pagination-color": "#FFF",
   "--swiper-pagination-bullet-inactive-color": "#FFF",
   "--swiper-pagination-bullet-inactive-opacity": "0.2",
+  "--swiper-navigation-sides-offset": "0px",
 };
 
 export default function Reviews() {
@@ -73,7 +75,6 @@ export default function Reviews() {
       <Swiper
         cssMode={true}
         style={{
-          padding: 50,
           ...swiperCustomStyles,
         }}
         slidesPerView={1}
