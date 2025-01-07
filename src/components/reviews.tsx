@@ -1,5 +1,7 @@
 "use client";
 
+import useSwiperSettings from "@/hooks/use-swiper-settings";
+
 import {
   Box,
   Button,
@@ -8,13 +10,11 @@ import {
   CardContent,
   CardHeader,
   Typography,
-  useTheme,
 } from "@mui/material";
 import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { FreeMode, Keyboard, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import ReviewItem from "./review-item";
@@ -54,20 +54,8 @@ const reviewItems = [
   },
 ];
 
-const swiperCustomStyles = {
-  paddingLeft: 30,
-  paddingRight: 30,
-  paddingTop: 50,
-  paddingBottom: 50,
-  "--swiper-navigation-color": "#FFF",
-  "--swiper-pagination-color": "#FFF",
-  "--swiper-pagination-bullet-inactive-color": "#FFF",
-  "--swiper-pagination-bullet-inactive-opacity": "0.2",
-  "--swiper-navigation-sides-offset": "0px",
-};
-
 export default function Reviews() {
-  const theme = useTheme();
+  const swiperProps = useSwiperSettings();
 
   return (
     <Box mt={"50px"}>
@@ -75,33 +63,7 @@ export default function Reviews() {
       <Typography variant="subtitle1">
         See why our customers choose us for their wood product needs
       </Typography>
-      <Swiper
-        cssMode={true}
-        style={{
-          ...swiperCustomStyles,
-        }}
-        slidesPerView={1}
-        centeredSlides={false}
-        slidesPerGroupSkip={1}
-        grabCursor={true}
-        spaceBetween={32}
-        keyboard={{
-          enabled: true,
-        }}
-        breakpoints={{
-          [theme.breakpoints.values.md]: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-          },
-        }}
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        freeMode={true}
-        modules={[Keyboard, Pagination, Navigation, FreeMode]}
-        className="mySwiper"
-      >
+      <Swiper {...swiperProps}>
         <SwiperSlide>
           <Card>
             <CardHeader title="Share Your Experience" />

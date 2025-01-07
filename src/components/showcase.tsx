@@ -1,10 +1,11 @@
 "use client";
 
-import { Box, Typography, useTheme } from "@mui/material";
+import useSwiperSettings from "@/hooks/use-swiper-settings";
+
+import { Box, Typography } from "@mui/material";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { FreeMode, Keyboard, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import ShowcaseItem from "./showcase-item";
@@ -61,22 +62,8 @@ const showcaseItems = [
   },
 ];
 
-// TODO: need to move these out of here so they apply site wide probably
-// TODO: potentially move out the props too
-const swiperCustomStyles = {
-  paddingLeft: 30,
-  paddingRight: 30,
-  paddingTop: 50,
-  paddingBottom: 50,
-  "--swiper-navigation-color": "#FFF",
-  "--swiper-pagination-color": "#FFF",
-  "--swiper-pagination-bullet-inactive-color": "#FFF",
-  "--swiper-pagination-bullet-inactive-opacity": "0.2",
-  "--swiper-navigation-sides-offset": "0px",
-};
-
 export default function ProductShowcase() {
-  const theme = useTheme();
+  const swiperProps = useSwiperSettings();
 
   return (
     <Box mt={"50px"}>
@@ -84,32 +71,7 @@ export default function ProductShowcase() {
       <Typography variant="subtitle1">
         Browse our wide selection of high-quality wood products and services
       </Typography>
-      <Swiper
-        cssMode={true}
-        style={{
-          ...swiperCustomStyles,
-        }}
-        slidesPerView={1}
-        centeredSlides={false}
-        slidesPerGroupSkip={1}
-        grabCursor={true}
-        spaceBetween={32}
-        keyboard={{
-          enabled: true,
-        }}
-        breakpoints={{
-          [theme.breakpoints.values.md]: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-          },
-        }}
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        freeMode={true}
-        modules={[Keyboard, Pagination, Navigation, FreeMode]}
-      >
+      <Swiper {...swiperProps}>
         {showcaseItems.map((s) => (
           <SwiperSlide key={s.heading}>
             <ShowcaseItem {...s} />
