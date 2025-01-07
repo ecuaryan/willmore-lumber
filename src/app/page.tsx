@@ -32,7 +32,7 @@ export default function Home() {
           height="inherit"
           top={0}
           left={0}
-          sx={{ backgroundColor: "rgba(0, 0, 0, 0.525)" }}
+          sx={{ backgroundColor: "rgba(0, 0, 0, 0.225)" }}
         />
         <Box
           position="absolute"
