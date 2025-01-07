@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ReactNode } from "react";
 
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
@@ -87,6 +87,11 @@ export default function Nav() {
   const handleDrawerClose = () => {
     setDrawerOpen(false);
   };
+
+  useEffect(() => {
+    // Reset scroll position on route change
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <AppBar
