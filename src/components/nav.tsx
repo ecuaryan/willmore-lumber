@@ -76,6 +76,8 @@ const navLinks = [
   { href: "/contact-us", text: "Contact Us", icon: <PhoneIcon /> },
 ];
 
+const VIEW_HEIGHT_THRESHOLD = 650;
+
 export default function Nav() {
   const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
   const pathname = usePathname();
@@ -116,13 +118,42 @@ export default function Nav() {
         </IconButton>
         <Box width="100%" sx={{ display: { xs: "none", md: "flex" } }}>
           <Link href="/" style={{ display: "flex" }}>
-            <Image
-              src="/logo.webp"
-              width={139}
-              height={114}
-              alt="Willmore Lumber logo"
-              style={{ margin: "5px" }}
-            />
+            <Box
+              sx={{
+                [`@media (min-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
+                  display: { xs: "none", md: "flex" },
+                },
+                [`@media (max-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
+                  display: { xs: "none", md: "none" },
+                },
+              }}
+            >
+              <Image
+                src="/logo.webp"
+                width={139}
+                height={114}
+                alt="Willmore Lumber logo"
+                style={{ margin: "5px" }}
+              />
+            </Box>
+            <Box
+              sx={{
+                [`@media (min-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
+                  display: { xs: "none", md: "none" },
+                },
+                [`@media (max-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
+                  display: { xs: "none", md: "flex" },
+                },
+              }}
+            >
+              <Image
+                src="/logo.webp"
+                width={68}
+                height={56}
+                alt="Willmore Lumber logo"
+                style={{ margin: "5px" }}
+              />
+            </Box>
           </Link>
           <Stack
             direction={"row"}
@@ -309,6 +340,6 @@ function NavListItem({
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
 
-// TODO: make the mobile view of the nav look better
-
 // TODO: just heard a customer ask if you sell "slabs"
+
+// TODO: could probably simplify the nav size logic
