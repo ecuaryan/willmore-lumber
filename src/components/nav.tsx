@@ -294,3 +294,5 @@ function NavListItem({
 // Add testimonials to the site
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
+
+// TODO: poping the side nav causes the page to scroll to the top

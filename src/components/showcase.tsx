@@ -38,12 +38,36 @@ const showcaseItems = [
     text: "We custom-cut lumber to perfectly match your specifications.",
     learnMorePath: "/custom-cut-lumber",
   },
+  {
+    imagePath: "/flooring.jpg",
+    imageDescription: "Smooth Flooring",
+    heading: "Smooth, Sleek, and Durable Flooring",
+    text: "Elevate your space with our smooth, durable flooring—designed for both beauty and lasting performance.",
+    learnMorePath: "/flooring",
+  },
+  {
+    imagePath: "/decking.webp",
+    imageDescription: "Decking",
+    heading: "Create Your Perfect Outdoor Space with Durable Decking",
+    text: "Enhance your outdoor living with our premium wood decking, designed for durability and style. Perfect for creating beautiful, long-lasting spaces.",
+    learnMorePath: "/decking",
+  },
+  {
+    imagePath: "/siding.webp",
+    imageDescription: "Siding",
+    heading: "Transform Your Home with Timeless Wood Siding",
+    text: "Elevate your home's curb appeal with our high-quality wood siding, crafted for both durability and aesthetic appeal. Perfect for a lasting first impression.",
+    learnMorePath: "/siding",
+  },
 ];
 
 // TODO: need to move these out of here so they apply site wide probably
 // TODO: potentially move out the props too
 const swiperCustomStyles = {
-  padding: 30,
+  paddingLeft: 30,
+  paddingRight: 30,
+  paddingTop: 50,
+  paddingBottom: 50,
   "--swiper-navigation-color": "#FFF",
   "--swiper-pagination-color": "#FFF",
   "--swiper-pagination-bullet-inactive-color": "#FFF",

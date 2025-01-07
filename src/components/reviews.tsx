@@ -55,7 +55,10 @@ const reviewItems = [
 ];
 
 const swiperCustomStyles = {
-  padding: 30,
+  paddingLeft: 30,
+  paddingRight: 30,
+  paddingTop: 50,
+  paddingBottom: 50,
   "--swiper-navigation-color": "#FFF",
   "--swiper-pagination-color": "#FFF",
   "--swiper-pagination-bullet-inactive-color": "#FFF",
