@@ -61,7 +61,6 @@ const navLinks = [
       { href: "/baled-shavings", text: "Baled Shavings" },
       { href: "/firewood", text: "Firewood" },
       { href: "/railroad-ties", text: "Railroad Ties" },
-      { href: "/fasteners", text: "Fasteners" },
       { href: "/wood-stain", text: "Wood Stain" },
     ],
   },
@@ -298,3 +297,7 @@ function NavListItem({
 // TODO: poping the side nav causes the page to scroll to the top
 
 // TODO: make the mobile view of the nav look better
+
+// TODO: fix the scroll to top on "Learn More" issue
+
+// TODO: just heard a customer ask if you sell "slabs"

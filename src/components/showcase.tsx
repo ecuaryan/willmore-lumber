@@ -33,13 +33,6 @@ const showcaseItems = [
     learnMorePath: "/tongue-and-groove",
   },
   {
-    imagePath: "/custom-beams.webp",
-    imageDescription: "Custom-Cut Beams",
-    heading: "Custom-Cut Lumber for Every Project",
-    text: "We custom-cut lumber to perfectly match your specifications.",
-    learnMorePath: "/custom-cut-lumber",
-  },
-  {
     imagePath: "/flooring.jpg",
     imageDescription: "Smooth Flooring",
     heading: "Smooth, Sleek, and Durable Flooring",
@@ -59,6 +52,48 @@ const showcaseItems = [
     heading: "Transform Your Home with Timeless Wood Siding",
     text: "Elevate your home's curb appeal with our high-quality wood siding, crafted for both durability and aesthetic appeal. Perfect for a lasting first impression.",
     learnMorePath: "/siding",
+  },
+  {
+    imagePath: "/baled-shavings.jpg",
+    imageDescription: "Baled Shavings",
+    heading: "Premium Baled Shavings for Clean, Comfortable Bedding",
+    text: "Keep your animals happy with our high-quality baled shavings, ideal for providing clean, soft, and absorbent bedding. Perfect for stables, coops, and more.",
+    learnMorePath: "/baled-shavings",
+  },
+  {
+    imagePath: "/firewood.jpg",
+    imageDescription: "Firewood",
+    heading: "Firewood for Cozy Nights and Warmth",
+    text: "Stock up on premium firewood, cut and seasoned for efficient burning. Perfect for fireplaces, wood stoves, and outdoor fire pits.",
+    learnMorePath: "/firewood",
+  },
+  {
+    imagePath: "/railroad-ties.jpg",
+    imageDescription: "Railroad Ties",
+    heading: "Durable Railroad Ties for Your Next Project",
+    text: "Our premium-grade railroad ties are perfect for landscaping, construction, and other heavy-duty applications. Made to last and versatile for a range of uses.",
+    learnMorePath: "/railroad-ties",
+  },
+  {
+    imagePath: "/wood-stain.webp",
+    imageDescription: "Wood Stain",
+    heading: "Protect and Enhance with Quality Wood Stain",
+    text: "Bring out the natural beauty of your wood with our exceptional stains, offering long-lasting protection and rich, vibrant finishes.",
+    learnMorePath: "/wood-stain",
+  },
+  {
+    imagePath: "/custom-beams.webp",
+    imageDescription: "Custom-Cut Beams",
+    heading: "Custom-Cut Lumber for Every Project",
+    text: "We custom-cut lumber to perfectly match your specifications.",
+    learnMorePath: "/custom-cut-lumber",
+  },
+  {
+    imagePath: "/delivery.webp",
+    imageDescription: "Delivery",
+    heading: "Fast and Reliable Delivery for Your Wood Products",
+    text: "Get your wood products delivered straight to your door with our dependable delivery service. Convenient and hassle-free, saving you time and effort.",
+    learnMorePath: "/delivery",
   },
 ];
 
