@@ -10,6 +10,13 @@ const theme = createTheme({
     mode: "dark",
   },
   components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "rgba(22, 22, 22, 0.8)",
+        },
+      },
+    },
     MuiTypography: {
       defaultProps: {
         component: "div",
