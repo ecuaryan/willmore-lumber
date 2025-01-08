@@ -56,6 +56,24 @@ export default function Flooring() {
           style={{ width: "100%" }}
         />
       </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <img
+          src="/flooring-10.webp"
+          alt="Douglas fir resawn flooring stairs"
+          title="Douglas fir resawn flooring"
+          loading="lazy"
+          style={{ width: "100%" }}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <img
+          src="/flooring-11.webp"
+          alt="Douglas fir smooth flooring"
+          title="Douglas fir smooth flooring"
+          loading="lazy"
+          style={{ width: "100%" }}
+        />
+      </Grid>
     </Grid>
   );
 }

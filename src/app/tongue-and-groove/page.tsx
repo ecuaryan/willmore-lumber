@@ -29,6 +29,16 @@ export default function TongueAndGroove() {
         <img
           src="/tongue-and-groove.webp"
           alt="tongue and groove"
+          title="tongue and groove knotty pine smooth"
+          loading="lazy"
+          style={{ width: "100%" }}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <img
+          src="/tongue-and-groove-2.jpg"
+          alt="tongue and groove"
+          title="tongue and groove Douglas fir smooth"
           loading="lazy"
           style={{ width: "100%" }}
         />
