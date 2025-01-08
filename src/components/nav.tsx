@@ -334,18 +334,14 @@ function NavListItem({
 
 // TODO: custom planing - talk about this on the Custom-Cut Lumber page --> planing, rough, even can make the reverse engineered knives to match an old style
 
-// Call or email for pricing --> where to put this?
-
-// Add testimonials to the site
-
-// TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
+// TODO: Call or email for pricing --> where to put this?
 
 // TODO: just heard a customer ask if you sell "slabs"
 
-// TODO: could probably simplify the nav size logic
-
 // TODO: Surfaced lumber, dimensional framing lumber
 
-// TODO: Big with swiper skipping one onback
-
 // TODO: which logo to use?
+
+// TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
+
+// TODO: could probably simplify the nav size logic
