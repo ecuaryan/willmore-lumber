@@ -1,15 +1,58 @@
-import { Typography } from "@mui/material";
+/* eslint-disable @next/next/no-img-element */
+import { List, ListItem, Stack, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 
 export default function PostsAndBeams() {
   return (
-    <>
-      <Typography variant="h5">
-        Posts and Beams - This page is coming soon.
-      </Typography>
-      {/*
-       - post and beam construction
-       - bridge planks
-       */}
-    </>
+    <Grid container spacing={4}>
+      <Grid size={12}>
+        <Stack spacing={3} maxWidth="700px">
+          <Typography variant="h3">Posts and Beams</Typography>
+          <Typography variant="body1">
+            Strong, durable, and customizable—our posts and beams are crafted to
+            support and enhance your construction projects with the beauty of
+            natural wood.
+          </Typography>
+          <Typography variant="body1">
+            <List>
+              <ListItem>post and beam contruction</ListItem>
+              <ListItem>bridge planks</ListItem>
+            </List>
+          </Typography>
+        </Stack>
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <img
+          src="/posts-and-beams-1.jpg"
+          alt="posts and beams lumber"
+          loading="lazy"
+          style={{ width: "100%" }}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <img
+          src="/posts-and-beams-3.webp"
+          alt="posts and beams lumber"
+          loading="lazy"
+          style={{ width: "100%" }}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <img
+          src="/posts-and-beams-2.jpg"
+          alt="posts and beams lumber"
+          loading="lazy"
+          style={{ width: "100%" }}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <img
+          src="/posts-and-beams.webp"
+          alt="posts and beams lumber"
+          loading="lazy"
+          style={{ width: "100%" }}
+        />
+      </Grid>
+    </Grid>
   );
 }

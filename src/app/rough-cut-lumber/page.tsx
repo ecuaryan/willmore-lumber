@@ -13,7 +13,6 @@ export default function RoughCutLumber() {
             lumber, ready to meet your project needs.
           </Typography>
           <Typography variant="body1">
-            Here are some common uses for rough-cut lumber:
             <List>
               <ListItem>farm and ranch</ListItem>
               <ListItem>corral fencing</ListItem>
