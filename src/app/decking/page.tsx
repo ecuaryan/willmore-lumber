@@ -60,11 +60,4 @@ export default function Decking() {
       </Grid>
     </Grid>
   );
-  <>
-    <Typography variant="h5">Decking - This page is coming soon.</Typography>
-    {/*
-       - tongue and groove decking
-       - specialed decking
-       */}
-  </>;
 }
