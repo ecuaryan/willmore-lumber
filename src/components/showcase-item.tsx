@@ -5,6 +5,7 @@ import {
   CardContent,
   CardMedia,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import Link from "next/link";
 
@@ -21,11 +22,13 @@ export default function ShowcaseItem({
   text: string;
   learnMorePath: string;
 }) {
+  const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
+
   return (
     <Card>
       <CardMedia
         component="img"
-        height="350"
+        height={isLargeScreen ? 300 : 200}
         image={imagePath}
         alt={imageDescription}
         title={imageDescription}
