@@ -1,12 +1,14 @@
 import { useMediaQuery, useTheme } from "@mui/material";
 import { FreeMode, Keyboard, Navigation, Pagination } from "swiper/modules";
+import { SwiperOptions } from "swiper/types";
 
-export default function useSwiperSettings() {
+export default function useSwiperSettings(): SwiperOptions & {
+  style: { [key: string]: string | number };
+} {
   const theme = useTheme();
   const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
 
   return {
-    cssMode: true,
     style: {
       paddingLeft: isLargeScreen ? 50 : 30,
       paddingRight: isLargeScreen ? 50 : 30,
@@ -18,9 +20,9 @@ export default function useSwiperSettings() {
       "--swiper-pagination-bullet-inactive-opacity": "0.2",
       "--swiper-navigation-sides-offset": "0px",
     },
-    slidesPerView: 1,
+    cssMode: true,
+    slidesPerView: "auto",
     centeredSlides: false,
-    slidesPerGroupSkip: 1,
     grabCursor: true,
     spaceBetween: 32,
     keyboard: {

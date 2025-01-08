@@ -107,8 +107,8 @@ export default function ProductShowcase() {
         Browse our wide selection of high-quality wood products and services
       </Typography>
       <Swiper {...swiperProps}>
-        {showcaseItems.map((s) => (
-          <SwiperSlide key={s.heading}>
+        {showcaseItems.map((s, index) => (
+          <SwiperSlide key={`showcase-item-${index}`}>
             <ShowcaseItem {...s} />
           </SwiperSlide>
         ))}
