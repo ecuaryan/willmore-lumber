@@ -6,6 +6,11 @@ export default function TongueAndGroove() {
       <Typography variant="h5">
         Tongue and Groove - This page is coming soon.
       </Typography>
+      {/*
+       - knotty pine
+       - Douglas fir
+       - smooth or resawn
+       */}
     </>
   );
 }

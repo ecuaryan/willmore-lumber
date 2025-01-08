@@ -6,6 +6,12 @@ export default function WoodStain() {
       <Typography variant="h5">
         Wood Stain - This page is coming soon.
       </Typography>
+      {/*
+       - DEFY Wood Stain
+       - can order many different colors
+       - dealer for DEFY Wood Stain products
+       - link to https://saversystems.com/collections/wood-stain-products
+       */}
     </>
   );
 }

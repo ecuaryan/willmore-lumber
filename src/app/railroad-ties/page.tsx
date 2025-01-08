@@ -6,6 +6,9 @@ export default function RailroadTies() {
       <Typography variant="h5">
         Railroad Ties - This page is coming soon.
       </Typography>
+      {/*
+       - We stock #1 grade and #2 grade railroad ties
+       */}
     </>
   );
 }

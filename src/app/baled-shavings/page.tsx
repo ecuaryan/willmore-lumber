@@ -6,6 +6,10 @@ export default function BaledShavings() {
       <Typography variant="h5">
         Baled Shavings - This page is coming soon.
       </Typography>
+      {/*
+       - livestock bedding
+       - pet bedding 
+       */}
     </>
   );
 }

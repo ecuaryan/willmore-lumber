@@ -6,6 +6,10 @@ export default function PostsAndBeams() {
       <Typography variant="h5">
         Posts and Beams - This page is coming soon.
       </Typography>
+      {/*
+       - post and beam construction
+       - bridge planks
+       */}
     </>
   );
 }

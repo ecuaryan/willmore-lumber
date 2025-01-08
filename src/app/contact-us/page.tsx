@@ -6,6 +6,7 @@ export default function ContactUs() {
       <Typography variant="h5">
         Your satisfaction is our top priority. Feel free to reach out with any
         questions, comments, or suggestions—we’re here to help!
+        {/* TODO: remmber to make the styling match here */}
       </Typography>
     </>
   );

@@ -343,3 +343,9 @@ function NavListItem({
 // TODO: just heard a customer ask if you sell "slabs"
 
 // TODO: could probably simplify the nav size logic
+
+// TODO: Surfaced lumber, dimensional framing lumber
+
+// TODO: Big with swiper skipping one onback
+
+// TODO: which logo to use?
