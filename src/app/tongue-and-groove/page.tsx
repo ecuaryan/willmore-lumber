@@ -16,7 +16,11 @@ export default function TongueAndGroove() {
             <List>
               <ListItem>knotty pine</ListItem>
               <ListItem>Douglas fir</ListItem>
-              <ListItem>rough or resawn</ListItem>
+              <ListItem>smooth or resawn</ListItem>
+              <ListItem>soffit</ListItem>
+              <ListItem>cielings</ListItem>
+              <ListItem>walls</ListItem>
+              <ListItem>wainscot</ListItem>
             </List>
           </Typography>
         </Stack>
