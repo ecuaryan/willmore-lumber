@@ -30,7 +30,7 @@ export default function useSwiperSettings(): SwiperOptions & {
     },
     breakpoints: {
       [theme.breakpoints.values.md]: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
     },
     navigation: true,
