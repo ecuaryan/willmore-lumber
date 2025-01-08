@@ -10,8 +10,8 @@ export default function useSwiperSettings(): SwiperOptions & {
 
   return {
     style: {
-      paddingLeft: isLargeScreen ? 50 : 30,
-      paddingRight: isLargeScreen ? 50 : 30,
+      paddingLeft: isLargeScreen ? 50 : 32,
+      paddingRight: isLargeScreen ? 50 : 32,
       paddingTop: 50,
       paddingBottom: 50,
       "--swiper-navigation-color": "#FFF",
@@ -31,7 +31,6 @@ export default function useSwiperSettings(): SwiperOptions & {
     breakpoints: {
       [theme.breakpoints.values.md]: {
         slidesPerView: 3,
-        slidesPerGroup: 3,
       },
     },
     navigation: true,
