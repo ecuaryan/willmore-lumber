@@ -31,9 +31,20 @@ export default function CustomCutLumber() {
           height={750}
         />
       </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/custom-cut-beams.webp"
+          alt="custom-cut beams"
+          title="custom-cut beams"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={640}
+          height={480}
+        />
+      </Grid>
     </Grid>
   );
 }
 
 // TODO: add more description here?
-// TODO: more images, find that one with the mantel and the one with the crazy angles
+// TODO: more images, find that one with the mantel
