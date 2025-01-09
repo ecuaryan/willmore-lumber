@@ -16,6 +16,7 @@ export default function CustomCutLumber() {
               <ListItem>live edge slabs for counter tops and mantels</ListItem>
               <ListItem>angled ridge beams</ListItem>
               <ListItem>wedge shaped lumber</ListItem>
+              <ListItem>decorative crafts</ListItem>
             </List>
           </Typography>
         </Stack>
@@ -42,9 +43,50 @@ export default function CustomCutLumber() {
           height={480}
         />
       </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/custom-cut-1.jpg"
+          alt="custom-cut lumber"
+          title="custom-cut lumber"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/custom-cut-2.jpg"
+          alt="custom-cut lumber"
+          title="custom-cut lumber"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/custom-cut-4.jpg"
+          alt="custom-cut lumber"
+          title="custom-cut lumber"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/custom-cut-3.jpg"
+          alt="custom-cut lumber"
+          title="custom-cut lumber"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
+        />
+      </Grid>
     </Grid>
   );
 }
-
-// TODO: add more description here?
-// TODO: more images, find that one with the mantel
