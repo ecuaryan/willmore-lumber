@@ -85,7 +85,7 @@ const showcaseItems = [
     imagePath: "/custom-beams.webp",
     imageDescription: "Custom-Cut Beams",
     heading: "Custom-Cut Lumber for Every Project",
-    text: "We custom-cut lumber to perfectly match your specifications.",
+    text: "We custom-cut lumber to match your specifications.",
     learnMorePath: "/custom-cut-lumber",
   },
   {

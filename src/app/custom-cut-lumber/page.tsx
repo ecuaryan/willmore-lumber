@@ -7,12 +7,17 @@ export default function CustomCutLumber() {
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Custom Cut Lumber</Typography>
+          <Typography variant="h3">Custom-Cut Lumber</Typography>
           <Typography variant="body1">
-            We custom-cut lumber to perfectly match your specifications.
+            We custom-cut lumber to match your specifications.
           </Typography>
           <Typography variant="body1">
             <List>
+              <ListItem>
+                we can reverse-engineer knives to closely match your provided
+                pattern
+              </ListItem>
+              <ListItem>custom planing of all lumber we produce</ListItem>
               <ListItem>live edge slabs for counter tops and mantels</ListItem>
               <ListItem>angled ridge beams</ListItem>
               <ListItem>wedge shaped lumber</ListItem>
@@ -24,7 +29,7 @@ export default function CustomCutLumber() {
       <Grid size={{ xs: 12, md: 6 }}>
         <Image
           src="/custom-beams.webp"
-          alt="custom cut lumber"
+          alt="custom-cut lumber"
           title="wedge shaped beams"
           loading="lazy"
           style={{ width: "100%", height: "auto" }}
