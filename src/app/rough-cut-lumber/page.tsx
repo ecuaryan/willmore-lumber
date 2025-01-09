@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 
 export default function RoughCutLumber() {
   return (
@@ -23,35 +23,47 @@ export default function RoughCutLumber() {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/rough-cut-1.webp"
           alt="Rough-cut lumber"
+          title="Rough-cut lumber"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/rough-cut-2.webp"
           alt="Rough-cut lumber"
+          title="Rough-cut lumber"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/rough-cut-3.webp"
           alt="Rough-cut lumber"
+          title="Rough-cut lumber"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "100%" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/fencing.jpg"
           alt="fencing"
+          title="fencing"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1000}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
     </Grid>

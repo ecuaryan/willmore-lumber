@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 
 export default function Decking() {
   return (
@@ -23,39 +23,47 @@ export default function Decking() {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/decking.webp"
           alt="decking"
-          title="decking"
+          title="tongue-and-groove resawn decking"
           loading="lazy"
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "auto" }}
+          width={1326}
+          height={750}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/decking-1.webp"
           alt="decking"
           title="decking"
           loading="lazy"
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/decking-2.webp"
           alt="decking"
           title="decking"
           loading="lazy"
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/decking-4.jpg"
           alt="decking"
-          title="decking"
+          title="tongue-and-groove resawn decking"
           loading="lazy"
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
         />
       </Grid>
     </Grid>
