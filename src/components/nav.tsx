@@ -55,6 +55,7 @@ const navLinks = [
     subNavLinks: [
       { href: "/rough-cut-lumber", text: "Rough-Cut Lumber" },
       { href: "/posts-and-beams", text: "Posts and Beams" },
+      { href: "/framing-lumber", text: "Framing Lumber" },
       { href: "/tongue-and-groove", text: "Tongue and Groove" },
       { href: "/flooring", text: "Flooring" },
       { href: "/decking", text: "Decking" },
@@ -333,20 +334,12 @@ function NavListItem({
     </ListItem>
   );
 }
-
-// TODO: custom planing - talk about this on the Custom-Cut Lumber page --> planing, rough, even can make the reverse engineered knives to match an old style
-
-// TODO: Call or email for pricing --> where to put this? --> its own page? modal?
-
-// TODO: Surfaced lumber, dimensional framing lumber
+// TODO: a galary of pictures page?
+// TODO: Where to put the picture of the dresser?
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
 
 // TODO: could probably simplify the nav sizing logic
-
-// TODO: Where to put the picture of the dresser?
-
-// TODO: a galary of pictures page?
 
 // TODO: can't pinch to zoom on swipers?
 

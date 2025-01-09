@@ -26,6 +26,13 @@ const showcaseItems = [
     learnMorePath: "/posts-and-beams",
   },
   {
+    imagePath: "/framing-lumber-1.jpg",
+    imageDescription: "Rraming Lumber",
+    heading: "Build Strong Structures with Quality Framing Lumber",
+    text: "Reliable and durable framing lumber for all your construction needs, crafted to provide strength and stability for every project.",
+    learnMorePath: "/framing-lumber",
+  },
+  {
     imagePath: "/tongue-and-groove.webp",
     imageDescription: "Tongue and Groove Boards",
     heading: "Versatile Tongue and Groove Solutions",
