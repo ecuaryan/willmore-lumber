@@ -92,7 +92,7 @@ const showcaseItems = [
     imagePath: "/delivery.webp",
     imageDescription: "Delivery",
     heading: "Fast and Reliable Delivery for Your Wood Products",
-    text: "Get your wood products delivered straight to your door with our dependable delivery service. Convenient and hassle-free, saving you time and effort.",
+    text: "Get your wood products delivered straight to your home with our dependable delivery service. Convenient and hassle-free, saving you time and effort.",
     learnMorePath: "/delivery",
   },
 ];
