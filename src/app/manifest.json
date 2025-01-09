@@ -2,6 +2,7 @@
   "name": "Willmore Lumber",
   "short_name": "Lumber",
   "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
