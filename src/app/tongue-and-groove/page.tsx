@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 
 export default function TongueAndGroove() {
   return (
@@ -26,21 +26,25 @@ export default function TongueAndGroove() {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/tongue-and-groove.webp"
           alt="tongue and groove"
           title="tongue and groove knotty pine smooth"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/tongue-and-groove-2.jpg"
           alt="tongue and groove"
           title="tongue and groove Douglas fir smooth"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
     </Grid>
