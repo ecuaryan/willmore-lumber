@@ -21,7 +21,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Willmore Lumber - The Goods From The Woods",
   description:
-    "Willmore Lumber is a family-owned business offering high-quality wood products, including rough-cut lumber, tongue and groove boards, flooring, siding, custom-cut lumber, posts, and beams.",
+    "Willmore Lumber: 50+ years of providing quality wood products like rough-cut lumber, tongue & groove boards, flooring, siding, beams, custom cuts, and more.",
 };
 
 export const viewport: Viewport = {

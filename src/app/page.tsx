@@ -48,7 +48,7 @@ export default function Home() {
         >
           <Stack spacing={3} ml={3} mr={3}>
             <Box>
-              <Typography variant="h2" fontWeight={500}>
+              <Typography component="h1" variant="h2" fontWeight={500}>
                 It all starts with the best logs...
               </Typography>
               <Typography variant="h6">

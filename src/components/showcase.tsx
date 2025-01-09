@@ -102,7 +102,9 @@ export default function ProductShowcase() {
 
   return (
     <Box mt={"50px"}>
-      <Typography variant="h4">The Goods From The Woods</Typography>
+      <Typography component="h2" variant="h4">
+        The Goods From The Woods
+      </Typography>
       <Typography variant="subtitle1">
         Browse our wide selection of high-quality wood products and services
       </Typography>
