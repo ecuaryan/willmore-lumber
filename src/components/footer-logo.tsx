@@ -19,7 +19,7 @@ export default function FooterLogo() {
         The Goods From The Woods
       </Typography>
       <Box textAlign={"center"}>
-        © 2024 - Willmore Lumber Co. All rights reserved.
+        © {new Date().getFullYear()} - Willmore Lumber Co. All rights reserved.
       </Box>
     </>
   );
