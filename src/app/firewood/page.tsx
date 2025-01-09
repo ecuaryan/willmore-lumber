@@ -32,8 +32,17 @@ export default function Firewood() {
           height={750}
         />
       </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/firewood-2.jpg"
+          alt="firewood"
+          title="firewood logs"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
+        />
+      </Grid>
     </Grid>
   );
 }
-
-// TODO: Add another close up picture of the firewood
