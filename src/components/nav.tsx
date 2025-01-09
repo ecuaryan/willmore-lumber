@@ -336,8 +336,6 @@ function NavListItem({
 
 // TODO: Call or email for pricing --> where to put this? --> its own page? modal?
 
-// TODO: just heard a customer ask if you sell "slabs" ... need pictures of this on the custom cut lumber page
-
 // TODO: Surfaced lumber, dimensional framing lumber
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
