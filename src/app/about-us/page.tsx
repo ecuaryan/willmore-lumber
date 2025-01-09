@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 
 export default function AboutUs() {
   return (
@@ -34,27 +34,36 @@ export default function AboutUs() {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/planer-building.webp"
           alt="Planer building"
+          title="Planer building"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/log-pile.webp"
           alt="Log pile"
+          title="Log pile"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12 }}>
-        <img
+        <Image
           src="/mill-sunset.webp"
           alt="Mill at sunset"
+          title="Mill at sunset"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
     </Grid>
