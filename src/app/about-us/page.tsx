@@ -55,6 +55,28 @@ export default function AboutUs() {
           style={{ width: "100%", height: "auto" }}
         />
       </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/kiln.webp"
+          alt="dry kiln"
+          title="dry kiln"
+          loading="lazy"
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/log-loader.jpg"
+          alt="Log pile"
+          title="Log pile"
+          loading="lazy"
+          width={706}
+          height={397}
+          style={{ width: "100%", height: "auto" }}
+        />
+      </Grid>
       <Grid size={{ xs: 12 }}>
         <Image
           src="/mill-sunset.webp"
