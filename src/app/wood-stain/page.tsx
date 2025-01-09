@@ -54,8 +54,39 @@ export default function WoodStain() {
           height={750}
         />
       </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/decking.webp"
+          alt="wood stain on deck"
+          title="wood stain on deck"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1326}
+          height={750}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/siding-1.webp"
+          alt="wood stain on gazeebo"
+          title="wood stain on gazeebo"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1000}
+          height={750}
+        />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/posts-and-beams-3.webp"
+          alt="wood stain on deck"
+          title="wood stain on deck"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1000}
+          height={750}
+        />
+      </Grid>
     </Grid>
   );
 }
-
-// TODO: could use another image
