@@ -334,12 +334,18 @@ function NavListItem({
 
 // TODO: custom planing - talk about this on the Custom-Cut Lumber page --> planing, rough, even can make the reverse engineered knives to match an old style
 
-// TODO: Call or email for pricing --> where to put this?
+// TODO: Call or email for pricing --> where to put this? --> its own page? modal?
 
-// TODO: just heard a customer ask if you sell "slabs"
+// TODO: just heard a customer ask if you sell "slabs" ... need pictures of this on the custom cut lumber page
 
 // TODO: Surfaced lumber, dimensional framing lumber
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
 
 // TODO: could probably simplify the nav sizing logic
+
+// TODO: Where to put the picture of the dresser?
+
+// TODO: a galary of pictures page?
+
+// TODO: post to the family group
