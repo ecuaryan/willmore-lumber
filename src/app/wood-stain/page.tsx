@@ -58,4 +58,4 @@ export default function WoodStain() {
   );
 }
 
-// TODO: could use another iamge
+// TODO: could use another image
