@@ -9,7 +9,7 @@ export default function RailroadTies() {
         <Stack spacing={3} maxWidth="700px">
           <Typography variant="h3">Railroad Ties</Typography>
           <Typography variant="body1">
-            Our premium-grade railroad ties are perfect for landscaping,
+            Our #1/#2 grade used railroad ties are perfect for landscaping,
             construction, and other heavy-duty applications. Built to last and
             versatile for a range of uses.
           </Typography>
