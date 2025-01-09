@@ -31,8 +31,17 @@ export default function RailroadTies() {
           height={750}
         />
       </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Image
+          src="/railroad-ties-1.jpg"
+          alt="railroad ties"
+          title="railroad ties for landscaping and construction"
+          loading="lazy"
+          style={{ width: "100%", height: "auto" }}
+          width={1333}
+          height={750}
+        />
+      </Grid>
     </Grid>
   );
 }
-
-// TODO: add another picture of the railroad ties
