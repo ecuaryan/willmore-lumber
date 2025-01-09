@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { ReactNode } from "react";
 
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ForestIcon from "@mui/icons-material/Forest";
@@ -72,6 +73,7 @@ const navLinks = [
       { href: "/delivery", text: "Delivery" },
     ],
   },
+  { href: "/pricing", text: "Pricing", icon: <AttachMoneyIcon /> },
   { href: "/about-us", text: "About Us", icon: <GroupsIcon /> },
   { href: "/contact-us", text: "Contact Us", icon: <PhoneIcon /> },
 ];
