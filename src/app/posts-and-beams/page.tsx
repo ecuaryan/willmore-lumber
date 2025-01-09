@@ -23,11 +23,11 @@ export default function PostsAndBeams() {
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
         <Image
-          src="/posts-and-beams-1.jpg"
+          src="/posts-and-beams-1.webp"
           alt="posts and beams lumber"
           title="posts and beams constuction"
           loading="lazy"
-          width={1333}
+          width={1000}
           height={750}
           style={{ width: "100%", height: "auto" }}
         />
@@ -38,19 +38,19 @@ export default function PostsAndBeams() {
           alt="posts and beams lumber"
           title="posts and beams deck"
           loading="lazy"
-          width={1333}
+          width={1000}
           height={750}
           style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
         <Image
-          src="/posts-and-beams-2.jpg"
+          src="/posts-and-beams-2.webp"
           alt="posts and beams lumber"
           title="posts and beams construction"
           loading="lazy"
-          width={1333}
-          height={750}
+          width={750}
+          height={1000}
           style={{ width: "100%", height: "auto" }}
         />
       </Grid>
