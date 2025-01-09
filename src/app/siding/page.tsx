@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 
 export default function Siding() {
   return (
@@ -27,57 +27,69 @@ export default function Siding() {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/siding-6.webp"
           alt="siding"
           title="siding"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "100%" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/siding.webp"
           alt="siding"
-          title="siding"
+          title="tongue-and-groove siding"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1226}
+          height={750}
+          style={{ width: "100%", height: "100%" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/siding-5.webp"
           alt="siding"
           title="siding"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1000}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/siding-1.webp"
           alt="siding"
           title="siding"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1000}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/siding-4.webp"
           alt="siding"
           title="siding"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={480}
+          height={640}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/siding-2.webp"
           alt="siding"
           title="siding"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={750}
+          height={1624}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
     </Grid>
