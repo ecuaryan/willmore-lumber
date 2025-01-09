@@ -71,7 +71,7 @@ const showcaseItems = [
     imagePath: "/railroad-ties.jpg",
     imageDescription: "Railroad Ties",
     heading: "Durable Railroad Ties for Your Next Project",
-    text: "Our premium-grade railroad ties are perfect for landscaping, construction, and other heavy-duty applications. Made to last and versatile for a range of uses.",
+    text: "Our premium-grade railroad ties are perfect for landscaping, construction, and other heavy-duty applications. Built to last and versatile for a range of uses.",
     learnMorePath: "/railroad-ties",
   },
   {
