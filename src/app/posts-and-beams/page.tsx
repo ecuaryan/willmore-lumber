@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 
 export default function PostsAndBeams() {
   return (
@@ -22,35 +22,47 @@ export default function PostsAndBeams() {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/posts-and-beams-1.jpg"
           alt="posts and beams lumber"
+          title="posts and beams constuction"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/posts-and-beams-3.webp"
           alt="posts and beams lumber"
+          title="posts and beams deck"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/posts-and-beams-2.jpg"
           alt="posts and beams lumber"
+          title="posts and beams construction"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/posts-and-beams.webp"
           alt="posts and beams lumber"
+          title="posts and beams roof structure"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1333}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
     </Grid>
