@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Image from "next/image";
 
 export default function Flooring() {
   return (
@@ -21,61 +21,71 @@ export default function Flooring() {
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/flooring.jpg"
           alt="Douglas fir resawn flooring"
           title="Douglas fir resawn flooring"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1000}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/flooring-2.jpg"
           alt="Douglas fir resawn flooring"
           title="Douglas fir resawn flooring"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={1000}
+          height={750}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
-          src="/flooring-1.jpg"
+        <Image
+          src="/flooring-1.webp"
           alt="Douglas fir resawn flooring stairs"
           title="Douglas fir resawn flooring"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={750}
+          height={1000}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/flooring-3.jpg"
           alt="Douglas fir smooth flooring"
           title="Douglas fir smooth flooring"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={480}
+          height={640}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/flooring-10.webp"
           alt="Douglas fir resawn flooring stairs"
           title="Douglas fir resawn flooring"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={750}
+          height={1000}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <img
+        <Image
           src="/flooring-11.webp"
           alt="Douglas fir smooth flooring"
           title="Douglas fir smooth flooring"
           loading="lazy"
-          style={{ width: "100%" }}
+          width={600}
+          height={800}
+          style={{ width: "100%", height: "auto" }}
         />
       </Grid>
     </Grid>
   );
 }
-
-// TODO: add titles to all the images
