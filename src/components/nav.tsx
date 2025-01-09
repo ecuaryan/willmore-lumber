@@ -340,8 +340,6 @@ function NavListItem({
 
 // TODO: Surfaced lumber, dimensional framing lumber
 
-// TODO: which logo to use?
-
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
 
-// TODO: could probably simplify the nav size logic
+// TODO: could probably simplify the nav sizing logic
