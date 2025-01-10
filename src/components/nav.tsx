@@ -337,11 +337,5 @@ function NavListItem({
   );
 }
 
-// TODO: email new logo and assets to willmore lumber email at some point
-// TODO: add google analytics?
-// TODO: Make notes of where willmorelumberco.com is held
-// TODO: Make notes of where willmorelumber.com is held
-
-// TODO: transfer the old domain to the new account
-
 // TODO: could probably simplify the nav sizing logic
+// TODO: add a link to a google photos album for the gallery
