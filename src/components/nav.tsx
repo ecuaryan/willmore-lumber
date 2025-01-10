@@ -349,5 +349,3 @@ function NavListItem({
 // TODO: can't pinch to zoom on swipers?
 
 // TODO: include in the readme about how/where the video is hosted maybe? I guess the code would say it
-
-// TODO: post to the family group
