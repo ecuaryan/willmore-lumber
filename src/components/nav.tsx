@@ -337,7 +337,10 @@ function NavListItem({
   );
 }
 
-// TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
+// TODO: Make notes of where willmorelumberco.com is held
+// TODO: Make notes of where willmorelumber.com is held
+
+// TODO: transfer the old domain to the new account
 
 // TODO: could probably simplify the nav sizing logic
 
