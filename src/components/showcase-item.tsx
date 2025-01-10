@@ -15,12 +15,14 @@ export default function ShowcaseItem({
   heading,
   text,
   learnMorePath,
+  linkText,
 }: {
   imagePath: string;
   imageDescription: string;
   heading: string;
   text: string;
   learnMorePath: string;
+  linkText: string;
 }) {
   const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
 
@@ -43,7 +45,7 @@ export default function ShowcaseItem({
       </CardContent>
       <CardActions>
         <Link href={learnMorePath}>
-          <Button size="small">Learn More</Button>
+          <Button size="small">{linkText}</Button>
         </Link>
       </CardActions>
     </Card>
