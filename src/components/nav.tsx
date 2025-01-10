@@ -336,8 +336,6 @@ function NavListItem({
     </ListItem>
   );
 }
-// TODO: a galary of pictures page?
-// TODO: Where to put the picture of the dresser?
 
 // TODO: redirect the old site to the new one, work with dad on this, transfer the old domain to the new account
 
