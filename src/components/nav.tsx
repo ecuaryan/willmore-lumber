@@ -337,6 +337,7 @@ function NavListItem({
   );
 }
 
+// add google analytics?
 // TODO: Make notes of where willmorelumberco.com is held
 // TODO: Make notes of where willmorelumber.com is held
 
