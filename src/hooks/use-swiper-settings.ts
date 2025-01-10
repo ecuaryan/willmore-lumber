@@ -19,6 +19,8 @@ export default function useSwiperSettings(): SwiperOptions & {
       "--swiper-pagination-bullet-inactive-color": "#FFF",
       "--swiper-pagination-bullet-inactive-opacity": "0.2",
       "--swiper-navigation-sides-offset": "0px",
+      // I put this touchAction rule in to fix the issue of not being able to zoom the page on mobile by pinching.
+      touchAction: "pan-x pan-y pinch-zoom",
     },
     cssMode: true,
     slidesPerView: "auto",

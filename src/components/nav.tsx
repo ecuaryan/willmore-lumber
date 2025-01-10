@@ -345,7 +345,3 @@ function NavListItem({
 // TODO: transfer the old domain to the new account
 
 // TODO: could probably simplify the nav sizing logic
-
-// TODO: can't pinch to zoom on swipers?
-
-// TODO: include in the readme about how/where the video is hosted maybe? I guess the code would say it
