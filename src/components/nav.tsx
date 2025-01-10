@@ -337,7 +337,8 @@ function NavListItem({
   );
 }
 
-// add google analytics?
+// TODO: email new logo and assets to willmore lumber email at some point
+// TODO: add google analytics?
 // TODO: Make notes of where willmorelumberco.com is held
 // TODO: Make notes of where willmorelumber.com is held
 
