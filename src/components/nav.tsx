@@ -7,6 +7,7 @@ import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import CollectionsIcon from "@mui/icons-material/Collections";
 import ForestIcon from "@mui/icons-material/Forest";
 import GroupsIcon from "@mui/icons-material/Groups";
 import HomeIcon from "@mui/icons-material/Home";
@@ -75,6 +76,7 @@ const navLinks = [
     ],
   },
   { href: "/pricing", text: "Pricing", icon: <AttachMoneyIcon /> },
+  { href: "/gallery", text: "Gallery", icon: <CollectionsIcon /> },
   { href: "/about-us", text: "About Us", icon: <GroupsIcon /> },
   { href: "/contact-us", text: "Contact Us", icon: <PhoneIcon /> },
 ];
