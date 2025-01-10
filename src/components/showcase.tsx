@@ -43,7 +43,7 @@ const showcaseItems = [
     imagePath: "/flooring.jpg",
     imageDescription: "Smooth Flooring",
     heading: "Smooth or Resawn, Durable Flooring",
-    text: "Elevate your space with our smooth or reswan, durable flooring—designed for both beauty and lasting performance.",
+    text: "Elevate your space with our smooth or resawn, durable flooring—designed for both beauty and lasting performance.",
     learnMorePath: "/flooring",
   },
   {
