@@ -30,6 +30,7 @@ export default function WoodStain() {
             component={Link}
             href="https://saversystems.com/collections/wood-stain-products"
             target="_blank"
+            sx={{ width: "fit-content" }}
           >
             <Stack alignItems="center" direction={"row"} spacing={1}>
               <Box>Learn more about DEFY Wood Stains</Box>

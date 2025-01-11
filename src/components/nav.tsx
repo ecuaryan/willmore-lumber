@@ -338,4 +338,3 @@ function NavListItem({
 }
 
 // TODO: could probably simplify the nav sizing logic
-// TODO: add a link to a google photos album for the gallery

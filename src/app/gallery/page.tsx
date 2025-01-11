@@ -1,6 +1,8 @@
-import { Stack, Typography } from "@mui/material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import { Box, Link as MuiLink, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Gallery() {
   return (
@@ -12,6 +14,17 @@ export default function Gallery() {
             Explore Our Gallery: See incredible projects and get inspired by
             what others have created with Willmore Lumber.
           </Typography>
+          <MuiLink
+            component={Link}
+            href="https://photos.app.goo.gl/iAhGYnYf4kyRi2wXA"
+            target="_blank"
+            sx={{ width: "fit-content" }}
+          >
+            <Stack alignItems="center" direction={"row"} spacing={1}>
+              <Box>View Our Full Gallery on Google Photos</Box>
+              <OpenInNewIcon />
+            </Stack>
+          </MuiLink>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
@@ -101,6 +114,19 @@ export default function Gallery() {
           width={480}
           height={640}
         />
+      </Grid>
+      <Grid size={{ xs: 12 }} display={"flex"}>
+        <MuiLink
+          component={Link}
+          href="https://photos.app.goo.gl/iAhGYnYf4kyRi2wXA"
+          target="_blank"
+          sx={{ width: "fit-content" }}
+        >
+          <Stack alignItems="center" direction={"row"} spacing={1}>
+            <Box>View More On Our Full Gallery on Google Photos</Box>
+            <OpenInNewIcon />
+          </Stack>
+        </MuiLink>
       </Grid>
     </Grid>
   );
