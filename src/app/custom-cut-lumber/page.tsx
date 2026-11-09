@@ -1,29 +1,37 @@
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Custom-Cut Lumber",
+  description:
+    "Custom-cut lumber and beams sawn to your specifications at Willmore Lumber in St. Anthony, Idaho.",
+  alternates: { canonical: "/custom-cut-lumber" },
+};
 
 export default function CustomCutLumber() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Custom-Cut Lumber</Typography>
+          <Typography component="h1" variant="h3">
+            Custom-Cut Lumber
+          </Typography>
           <Typography variant="body1">
             We custom-cut lumber to match your specifications.
           </Typography>
-          <Typography variant="body1">
-            <List>
-              <ListItem>
-                we can reverse-engineer knives to closely match your provided
-                pattern
-              </ListItem>
-              <ListItem>custom planing of all lumber we produce</ListItem>
-              <ListItem>live edge slabs for counter tops and mantels</ListItem>
-              <ListItem>angled ridge beams</ListItem>
-              <ListItem>wedge shaped lumber</ListItem>
-              <ListItem>decorative crafts</ListItem>
-            </List>
-          </Typography>
+          <List>
+            <ListItem>
+              we can reverse-engineer knives to closely match your provided
+              pattern
+            </ListItem>
+            <ListItem>custom planing of all lumber we produce</ListItem>
+            <ListItem>live edge slabs for counter tops and mantels</ListItem>
+            <ListItem>angled ridge beams</ListItem>
+            <ListItem>wedge shaped lumber</ListItem>
+            <ListItem>decorative crafts</ListItem>
+          </List>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>

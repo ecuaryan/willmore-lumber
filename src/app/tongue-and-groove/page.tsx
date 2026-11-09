@@ -1,28 +1,36 @@
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Tongue and Groove",
+  description:
+    "Tongue and groove boards for ceilings, walls, and paneling from Willmore Lumber in St. Anthony, Idaho.",
+  alternates: { canonical: "/tongue-and-groove" },
+};
 
 export default function TongueAndGroove() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Tongue and Groove</Typography>
+          <Typography component="h1" variant="h3">
+            Tongue and Groove
+          </Typography>
           <Typography variant="body1">
             Discover the natural beauty of knotty pine and Douglas fir
             tongue-and-groove boards, perfect for a wide range of applications.
           </Typography>
-          <Typography variant="body1">
-            <List>
-              <ListItem>knotty pine</ListItem>
-              <ListItem>Douglas fir</ListItem>
-              <ListItem>smooth or resawn</ListItem>
-              <ListItem>soffit</ListItem>
-              <ListItem>cielings</ListItem>
-              <ListItem>walls</ListItem>
-              <ListItem>wainscot</ListItem>
-            </List>
-          </Typography>
+          <List>
+            <ListItem>knotty pine</ListItem>
+            <ListItem>Douglas fir</ListItem>
+            <ListItem>smooth or resawn</ListItem>
+            <ListItem>soffit</ListItem>
+            <ListItem>cielings</ListItem>
+            <ListItem>walls</ListItem>
+            <ListItem>wainscot</ListItem>
+          </List>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>

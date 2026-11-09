@@ -9,9 +9,9 @@ Marketing website for [Willmore Lumber](https://willmorelumber.com), a family-ru
 - **Next.js App Router** with static export (`output: "export"`) for fast loads and simple hosting
 - **Fully responsive** navigation — desktop toolbar with nested menus, mobile drawer with collapsible sections
 - **15+ content pages** for products (rough-cut lumber, beams, flooring, siding, etc.) and services (custom cuts, delivery)
-- **Interactive carousels** (Swiper) on the home page for product showcase and customer testimonials
+- **Product grid and testimonials carousel** on the home page, with a clear call-to-action (tap-to-call, quote-request email) in the hero and footer
 - **CI/CD** via GitHub Actions — build on push to `main`, deploy to GitHub Pages with a custom domain
-- **SEO & PWA basics** — page metadata, `robots.txt`, web app manifest, and optimized images (WebP where possible)
+- **SEO & PWA basics** — per-page titles/descriptions/canonical URLs, Open Graph tags, `LocalBusiness` structured data (JSON-LD), generated `sitemap.xml`, `robots.txt`, web app manifest, and WebP images
 
 ## Tech Stack
 
@@ -20,7 +20,7 @@ Marketing website for [Willmore Lumber](https://willmorelumber.com), a family-ru
 | Framework | [Next.js 15](https://nextjs.org/) (App Router) |
 | UI | [React 19](https://react.dev/), [Material UI 6](https://mui.com/) |
 | Language | [TypeScript](https://www.typescriptlang.org/) |
-| Carousels | [Swiper](https://swiperjs.com/) |
+| Carousel | [Swiper](https://swiperjs.com/) (testimonials) |
 | Hosting | [GitHub Pages](https://pages.github.com/) |
 | CI | GitHub Actions |
 

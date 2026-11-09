@@ -1,24 +1,31 @@
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Firewood",
+  description: "Firewood from Willmore Lumber in St. Anthony, Idaho.",
+  alternates: { canonical: "/firewood" },
+};
 
 export default function Firewood() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Firewood</Typography>
+          <Typography component="h1" variant="h3">
+            Firewood
+          </Typography>
           <Typography variant="body1">
             Stock up on premium firewood, cut and seasoned for efficient
             burning. Perfect for fireplaces, wood stoves, and outdoor fire pits.
           </Typography>
-          <Typography variant="body1">
-            <List>
-              <ListItem>
-                anywhere from a few pieces to many cords available
-              </ListItem>
-            </List>
-          </Typography>
+          <List>
+            <ListItem>
+              anywhere from a few pieces to many cords available
+            </ListItem>
+          </List>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>

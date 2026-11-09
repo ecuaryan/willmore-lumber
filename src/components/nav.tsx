@@ -45,7 +45,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 1),
   // necessary for content to be below app bar
   ...theme.mixins.toolbar,
-  justifyContent: "flex-end",
+  justifyContent: "space-between",
 }));
 
 const navLinks = [
@@ -81,7 +81,49 @@ const navLinks = [
   { href: "/contact-us", text: "Contact Us", icon: <PhoneIcon /> },
 ];
 
-const VIEW_HEIGHT_THRESHOLD = 650;
+function Brand({
+  compact = false,
+  onClick,
+}: {
+  compact?: boolean;
+  onClick?: () => void;
+}) {
+  return (
+    <Link
+      href="/"
+      onClick={onClick}
+      aria-label="Willmore Lumber home"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 10,
+        color: "inherit",
+        textDecoration: "none",
+      }}
+    >
+      <Image
+        src="/logo.webp"
+        width={58}
+        height={47}
+        alt=""
+        style={{ width: 58, height: "auto" }}
+      />
+      <Box
+        component="span"
+        sx={{
+          fontWeight: 700,
+          letterSpacing: "0.08em",
+          textTransform: "uppercase",
+          lineHeight: 1.1,
+          fontSize: compact ? "0.95rem" : "1.2rem",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Willmore Lumber
+      </Box>
+    </Link>
+  );
+}
 
 export default function Nav() {
   const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up("md"));
@@ -97,7 +139,7 @@ export default function Nav() {
 
   useEffect(() => {
     // Reset scroll position on route change
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [pathname]);
 
   return (
@@ -122,44 +164,7 @@ export default function Nav() {
           <MenuIcon fontSize="large" />
         </IconButton>
         <Box width="100%" sx={{ display: { xs: "none", md: "flex" } }}>
-          <Link href="/" style={{ display: "flex" }}>
-            <Box
-              sx={{
-                [`@media (min-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
-                  display: { xs: "none", md: "flex" },
-                },
-                [`@media (max-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
-                  display: { xs: "none", md: "none" },
-                },
-              }}
-            >
-              <Image
-                src="/logo.webp"
-                width={139}
-                height={114}
-                alt="Willmore Lumber logo"
-                style={{ margin: "5px" }}
-              />
-            </Box>
-            <Box
-              sx={{
-                [`@media (min-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
-                  display: { xs: "none", md: "none" },
-                },
-                [`@media (max-height: ${VIEW_HEIGHT_THRESHOLD}px)`]: {
-                  display: { xs: "none", md: "flex" },
-                },
-              }}
-            >
-              <Image
-                src="/logo.webp"
-                width={68}
-                height={56}
-                alt="Willmore Lumber logo"
-                style={{ margin: "5px" }}
-              />
-            </Box>
-          </Link>
+          <Brand />
           <Stack
             direction={"row"}
             spacing={3}
@@ -198,14 +203,7 @@ export default function Nav() {
           }}
         >
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
-            <Link href="/" style={{ display: "flex" }}>
-              <Image
-                src="/logo.webp"
-                alt="Willmore Lumber logo"
-                width={68}
-                height={56}
-              />
-            </Link>
+            <Brand compact />
           </Box>
         </Box>
         <Drawer
@@ -218,6 +216,7 @@ export default function Nav() {
           }}
         >
           <DrawerHeader>
+            <Brand compact onClick={handleDrawerClose} />
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
                 <ChevronLeftIcon />
@@ -254,6 +253,17 @@ export default function Nav() {
                 );
               })}
             </List>
+            <Box px={2} pt={1} pb={3}>
+              <Button
+                component="a"
+                href="tel:+12086247329"
+                variant="contained"
+                fullWidth
+                startIcon={<PhoneIcon />}
+              >
+                Call (208) 624-7329
+              </Button>
+            </Box>
           </Box>
         </Drawer>
       </Toolbar>

@@ -1,25 +1,33 @@
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Rough-Cut Lumber",
+  description:
+    "Rough-cut lumber for farm, ranch, fencing, and rustic projects from Willmore Lumber in St. Anthony, Idaho.",
+  alternates: { canonical: "/rough-cut-lumber" },
+};
 
 export default function RoughCutLumber() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Rough-Cut Lumber</Typography>
+          <Typography component="h1" variant="h3">
+            Rough-Cut Lumber
+          </Typography>
           <Typography variant="body1">
             We carry a wide variety of lengths and sizes in premium rough-cut
             lumber, ready to meet your project needs.
           </Typography>
-          <Typography variant="body1">
-            <List>
-              <ListItem>farm and ranch</ListItem>
-              <ListItem>corral fencing</ListItem>
-              <ListItem>rustic wood projects</ListItem>
-              <ListItem>garden/flower boxes</ListItem>
-            </List>
-          </Typography>
+          <List>
+            <ListItem>farm and ranch</ListItem>
+            <ListItem>corral fencing</ListItem>
+            <ListItem>rustic wood projects</ListItem>
+            <ListItem>garden/flower boxes</ListItem>
+          </List>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>

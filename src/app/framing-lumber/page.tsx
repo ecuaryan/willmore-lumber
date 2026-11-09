@@ -1,26 +1,34 @@
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Framing Lumber",
+  description:
+    "Framing lumber at fair prices from Willmore Lumber in St. Anthony, Idaho.",
+  alternates: { canonical: "/framing-lumber" },
+};
 
 export default function FamingLumber() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Framing Lumber</Typography>
+          <Typography component="h1" variant="h3">
+            Framing Lumber
+          </Typography>
           <Typography variant="body1">
             Reliable and durable framing lumber for all your construction needs,
             crafted to provide strength and stability for every project.
           </Typography>
-          <Typography variant="body1">
-            <List>
-              <ListItem>planed 2x4&apos;s, 2x6&apos;s, etc.</ListItem>
-              <ListItem>1x4 furring strips</ListItem>
-              <ListItem>
-                trim lumber (1x4&apos;s, 1x6&apos;s, 1x8&apos;s, etc.)
-              </ListItem>
-            </List>
-          </Typography>
+          <List>
+            <ListItem>planed 2x4&apos;s, 2x6&apos;s, etc.</ListItem>
+            <ListItem>1x4 furring strips</ListItem>
+            <ListItem>
+              trim lumber (1x4&apos;s, 1x6&apos;s, 1x8&apos;s, etc.)
+            </ListItem>
+          </List>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>

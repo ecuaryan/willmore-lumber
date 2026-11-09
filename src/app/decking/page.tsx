@@ -1,25 +1,33 @@
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Decking",
+  description:
+    "Quality decking lumber from Willmore Lumber, a family-run mill in St. Anthony, Idaho.",
+  alternates: { canonical: "/decking" },
+};
 
 export default function Decking() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Decking</Typography>
+          <Typography component="h1" variant="h3">
+            Decking
+          </Typography>
           <Typography variant="body1">
             Enhance your outdoor living with our premium wood decking, designed
             for durability and style. Perfect for creating beautiful,
             long-lasting spaces.
           </Typography>
-          <Typography variant="body1">
-            <List>
-              <ListItem>with or without tongue and groove</ListItem>
-              <ListItem>4, 6, 8 inch</ListItem>
-              <ListItem>smooth or resawn</ListItem>
-            </List>
-          </Typography>
+          <List>
+            <ListItem>with or without tongue and groove</ListItem>
+            <ListItem>4, 6, 8 inch</ListItem>
+            <ListItem>smooth or resawn</ListItem>
+          </List>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>

@@ -1,13 +1,23 @@
 import { Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Family-run lumber mill in St. Anthony, Idaho. Jim Willmore and his sons have served the community for 50+ years.",
+  alternates: { canonical: "/about-us" },
+};
 
 export default function AboutUs() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">About Us</Typography>
+          <Typography component="h1" variant="h3">
+            About Us
+          </Typography>
           <Typography variant="body1">
             At Willmore Lumber, family and tradition are at the heart of
             everything we do. For more than 50 years, we&apos;ve proudly served

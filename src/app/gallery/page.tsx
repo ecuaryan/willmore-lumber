@@ -1,15 +1,25 @@
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { Box, Link as MuiLink, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Gallery",
+  description:
+    "Photos of lumber, beams, flooring, siding, and projects from Willmore Lumber.",
+  alternates: { canonical: "/gallery" },
+};
 
 export default function Gallery() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Gallery</Typography>
+          <Typography component="h1" variant="h3">
+            Gallery
+          </Typography>
           <Typography variant="body1">
             Explore Our Gallery: See incredible projects and get inspired by
             what others have created with Willmore Lumber.

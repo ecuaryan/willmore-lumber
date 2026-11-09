@@ -8,15 +8,25 @@ import {
   Typography,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Wood Stain",
+  description:
+    "Log home and wood stain available through Willmore Lumber in St. Anthony, Idaho.",
+  alternates: { canonical: "/wood-stain" },
+};
 
 export default function WoodStain() {
   return (
     <Grid container spacing={4}>
       <Grid size={12}>
         <Stack spacing={3} maxWidth="700px">
-          <Typography variant="h3">Wood Stain</Typography>
+          <Typography component="h1" variant="h3">
+            Wood Stain
+          </Typography>
           <Typography variant="body1">
             Bring out the natural beauty of your wood with our exceptional
             stains, offering long-lasting protection and rich, vibrant finishes.
@@ -37,11 +47,9 @@ export default function WoodStain() {
               <OpenInNewIcon />
             </Stack>
           </MuiLink>
-          <Typography variant="body1">
-            <List>
-              <ListItem>many different colors available</ListItem>
-            </List>
-          </Typography>
+          <List>
+            <ListItem>many different colors available</ListItem>
+          </List>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
