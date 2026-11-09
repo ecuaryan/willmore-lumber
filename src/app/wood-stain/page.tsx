@@ -10,7 +10,6 @@ import {
 import Grid from "@mui/material/Grid2";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Wood Stain",
@@ -37,7 +36,6 @@ export default function WoodStain() {
             protect and enhance the natural beauty of your wood.
           </Typography>
           <MuiLink
-            component={Link}
             href="https://saversystems.com/collections/wood-stain-products"
             target="_blank"
             sx={{ width: "fit-content" }}

@@ -24,7 +24,7 @@ export default function ContactUs() {
       <Box
         component="iframe"
         title="Map to Willmore Lumber"
-        src="https://www.google.com/maps?q=1205+S+Yellowstone+Hwy,+St.+Anthony,+ID+83445&output=embed"
+        src="https://www.google.com/maps?q=Willmore+Lumber,+1205+S+Yellowstone+Hwy,+St.+Anthony,+ID+83445&output=embed"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         sx={{ border: 0, width: "100%", height: 350 }}

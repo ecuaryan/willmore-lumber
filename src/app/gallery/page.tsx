@@ -3,7 +3,6 @@ import { Box, Link as MuiLink, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -25,7 +24,6 @@ export default function Gallery() {
             what others have created with Willmore Lumber.
           </Typography>
           <MuiLink
-            component={Link}
             href="https://photos.app.goo.gl/iAhGYnYf4kyRi2wXA"
             target="_blank"
             sx={{ width: "fit-content" }}
@@ -127,7 +125,6 @@ export default function Gallery() {
       </Grid>
       <Grid size={{ xs: 12 }} display={"flex"}>
         <MuiLink
-          component={Link}
           href="https://photos.app.goo.gl/iAhGYnYf4kyRi2wXA"
           target="_blank"
           sx={{ width: "fit-content" }}
