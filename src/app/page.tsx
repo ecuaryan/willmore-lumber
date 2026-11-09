@@ -16,8 +16,8 @@ export default function Home() {
         sx={{
           position: "relative",
           overflow: "hidden",
-          height: { xs: "70vh", md: "65vh" },
-          minHeight: 440,
+          height: { xs: "auto", md: "65vh" },
+          minHeight: { xs: 0, md: 440 },
           maxHeight: 720,
           width: "100%",
         }}
@@ -44,13 +44,16 @@ export default function Home() {
           }}
         />
         <Box
-          position="absolute"
           top={0}
           left={0}
           width="100%"
-          height="100%"
           display="flex"
           alignItems="center"
+          sx={{
+            position: { xs: "relative", md: "absolute" },
+            height: { xs: "auto", md: "100%" },
+            py: { xs: 8, md: 0 },
+          }}
         >
           <DefaultPageWidth>
             <Stack
